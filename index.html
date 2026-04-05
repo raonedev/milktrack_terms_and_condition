@@ -1,10 +1,15 @@
+I have updated your HTML code to include a comprehensive **Privacy Policy** and **Terms and Conditions**. This version specifically addresses the **BLE Bluetooth technology** requirements, the specific **Android permissions** you listed, and the data flow between **Admins (Company/Dairy)** and **Clients (Customers)**.
+
+All emojis have been removed and the tone is professional and legally structured.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions - MilkTrack</title>
+    <title>Legal Policies - MilkTrack</title>
     <style>
         * {
             margin: 0;
@@ -52,19 +57,21 @@
         }
 
         h2 {
-            font-size: 20px;
-            font-weight: 600;
+            font-size: 22px;
+            font-weight: 700;
             color: #1E88E5;
-            margin-bottom: 14px;
-            padding-bottom: 8px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
             border-bottom: 2px solid #e3f2fd;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         h3 {
-            font-size: 16px;
+            font-size: 17px;
             font-weight: 600;
             color: #333;
-            margin: 16px 0 8px;
+            margin: 20px 0 10px;
         }
 
         p {
@@ -75,57 +82,55 @@
 
         ul {
             padding-left: 20px;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
         }
 
         ul li {
             font-size: 15px;
             color: #444;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
         }
 
         .highlight {
-            background: #e3f2fd;
+            background: #f1f8ff;
             border-left: 4px solid #1E88E5;
-            padding: 14px 18px;
+            padding: 16px;
             border-radius: 0 8px 8px 0;
-            margin: 16px 0;
-            font-size: 15px;
+            margin: 20px 0;
+            font-size: 14px;
             color: #1a5c9e;
+            font-style: italic;
         }
 
-        .badge {
-            display: inline-block;
-            background: #1E88E5;
-            color: white;
-            font-size: 12px;
+        .section-divider {
+            margin: 60px 0;
+            border-top: 3px double #d1d9e6;
+            text-align: center;
+        }
+
+        .policy-nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .policy-nav a {
+            margin: 0 10px;
+            color: #1E88E5;
+            text-decoration: none;
             font-weight: 600;
-            padding: 2px 10px;
-            border-radius: 20px;
-            margin-left: 8px;
-            vertical-align: middle;
         }
 
         footer {
             text-align: center;
-            padding: 24px;
+            padding: 40px 24px;
             font-size: 13px;
             color: #888;
-        }
-
-        footer a {
-            color: #1E88E5;
-            text-decoration: none;
+            border-top: 1px solid #e0e0e0;
         }
 
         @media (max-width: 600px) {
-            header h1 {
-                font-size: 24px;
-            }
-
-            .card {
-                padding: 24px 18px;
-            }
+            header h1 { font-size: 24px; }
+            .card { padding: 24px 18px; }
         }
     </style>
 </head>
@@ -133,211 +138,99 @@
 <body>
 
     <header>
-        <h1>MilkTrack</h1>
-        <p>Terms and Conditions &nbsp;|&nbsp; Last updated: March 2026</p>
+        <h1>MilkTrack Legal Documentation</h1>
+        <p>Terms of Service & Privacy Policy | Effective Date: April 2026</p>
     </header>
 
     <div class="container">
+        
+        <div class="card" id="terms">
+            <h2>Terms and Conditions</h2>
+            
+            <h3>1. Agreement to Terms</h3>
+            <p>By accessing or using MilkTrack, you agree to be bound by these Terms and Conditions and all applicable laws and regulations in Haryana, India. If you do not agree with any of these terms, you are prohibited from using or accessing this application.</p>
 
-        <div class="card">
-            <h2>1. Introduction</h2>
-            <p>Welcome to <strong>MilkTrack</strong>, a milk delivery management application developed to help dairy
-                administrators manage their customers, milk data, and delivery records efficiently.</p>
-            <p>By downloading, installing, or using MilkTrack, you agree to be bound by these Terms and Conditions. If
-                you do not agree, please do not use the application.</p>
+            <h3>2. User Registration and Accounts</h3>
+            <p>To access the services, users must register an account. We collect the following information during registration:</p>
+            <ul>
+                <li>Full Individual Name</li>
+                <li>Registered Company/Dairy Name</li>
+                <li>Valid Phone Number</li>
+                <li>Valid Email Address</li>
+            </ul>
+            <p><strong>Admin Responsibilities:</strong> Admins (Dairy Owners/Companies) are responsible for managing customer accounts and ensuring that data entered (entries for milk quality and quantity) is accurate. Admins have the authority to add customers and generate data entries.</p>
+            <p><strong>Client/Customer Access:</strong> Clients registered under an Admin have the right to view all entries, history, and records specifically associated with their profile. Clients cannot modify data entered by the Admin.</p>
+
+            <h3>3. Bluetooth (BLE) and Hardware Integration</h3>
+            <p>MilkTrack utilizes Bluetooth Low Energy (BLE) technology to interface with milk analyzer hardware. </p>
+            <ul>
+                <li>The application is specifically designed to connect with "Yogesh_Milk_Analyzer" devices.</li>
+                <li>The user is responsible for ensuring the hardware is properly calibrated.</li>
+                <li>MilkTrack provides the interface for data transmission but is not liable for hardware-level reading errors.</li>
+            </ul>
+
+            <h3>4. Acceptable Use and Data Integrity</h3>
+            <p>Users must not provide false information or use the app for fraudulent billing. The Admin is solely responsible for the legal relationship and financial transactions with their added customers. MilkTrack provides the management tool but is not a party to the commercial agreements between Admins and Clients.</p>
+
+            <h3>5. Termination of Service</h3>
+            <p>We reserve the right to terminate or suspend access to our service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="card" id="privacy">
+            <h2>Privacy Policy</h2>
+
+            <h3>1. Information Collection</h3>
+            <p>We collect personal and technical information to provide a seamless milk management experience. This includes:</p>
+            <ul>
+                <li><strong>Identity Data:</strong> Name, Company Name, Phone Number, and Email.</li>
+                <li><strong>Operational Data:</strong> Customer lists, milk quality parameters (FAT, SNF, Density, etc.), and delivery records.</li>
+                <li><strong>Device Data:</strong> Information required to facilitate Bluetooth connectivity and Push Notifications.</li>
+            </ul>
+
+            <h3>2. Android Permissions and Usage</h3>
+            <p>To function correctly on Android devices, MilkTrack requires the following permissions. Each is used strictly for the purposes described:</p>
+            
+            <ul>
+                <li><strong>INTERNET:</strong> Required to sync data between Admin and Client devices and to store records in our secure cloud database.</li>
+                <li><strong>POST_NOTIFICATIONS:</strong> Used to alert Clients of new milk entries and send Admins daily reminders.</li>
+                <li><strong>SCHEDULE_EXACT_ALARM & RECEIVE_BOOT_COMPLETED:</strong> Required for the reliability of scheduled reminders and automated background tasks after a device restart.</li>
+                <li><strong>BLUETOOTH, BLUETOOTH_ADMIN & CONNECT/SCAN:</strong> Essential for discovering, pairing, and receiving data from the Milk Analyzer hardware via BLE.</li>
+                <li><strong>ACCESS_FINE_LOCATION:</strong> On Android, this permission is a technical requirement for Bluetooth Scanning. We do not track or store your actual geographic coordinates.</li>
+            </ul>
+
+            <h3>3. Data Sharing and Disclosure</h3>
+            <p>Data entered by an Admin regarding a specific Customer is shared directly with that Customer via their unique login. We do not sell your personal or company data to third parties. Data is only shared with third-party infrastructure providers (e.g., Supabase, Firebase) as necessary to host the application services.</p>
+
+            <h3>4. Data Security</h3>
+            <p>We implement industry-standard security measures to protect your data. However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your personal information, we cannot guarantee its absolute security.</p>
+
+            <h3>5. Jurisdiction</h3>
+            <p>This policy is governed by the laws of India. Any legal proceedings related to data privacy shall be handled within the jurisdiction of the courts in Haryana, India.</p>
+
             <div class="highlight">
-                These terms apply to all users of MilkTrack, including Admins and Customers.
+                By using MilkTrack, you consent to the collection and use of information in accordance with this Privacy Policy.
             </div>
         </div>
 
         <div class="card">
-            <h2>2. User Roles</h2>
-            <p>MilkTrack operates with two types of users:</p>
-            <h3>Admin <span class="badge">Admin</span></h3>
+            <h2>Contact Us</h2>
+            <p>For any inquiries regarding these legal documents or to request data deletion, please contact our support team:</p>
             <ul>
-                <li>Registers independently using phone number and email address.</li>
-                <li>Can create and manage customer accounts under their profile.</li>
-                <li>Can add daily milk data including FAT, SNF, protein, density, water, and weight.</li>
-                <li>Can mark delivery records for individual customers.</li>
-                <li>Is responsible for the accuracy of all data entered.</li>
-            </ul>
-            <h3>Customer <span class="badge" style="background:#26C6DA;">Customer</span></h3>
-            <ul>
-                <li>Must be registered by an Admin before creating an account.</li>
-                <li>Registers using their phone number (which must already exist in the system) and email.</li>
-                <li>Can only view milk data and delivery records associated with their Admin.</li>
-                <li>Cannot modify any data.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>3. Account Registration</h2>
-            <p>To use MilkTrack, users must provide accurate and complete registration information including:</p>
-            <ul>
-                <li>Full name</li>
-                <li>Valid phone number</li>
-                <li>Valid email address</li>
-                <li>Password (securely stored)</li>
-            </ul>
-            <p>Customers can only register if their phone number has been pre-registered by their Admin. Attempting to
-                register with an unregistered phone number will be declined.</p>
-            <p>You are responsible for maintaining the confidentiality of your account credentials and for all
-                activities that occur under your account.</p>
-        </div>
-
-        <div class="card">
-            <h2>4. Data and Privacy</h2>
-            <p>MilkTrack collects and stores the following data to provide its services:</p>
-            <ul>
-                <li>Personal information: name, phone number, email address</li>
-                <li>Milk quality data: FAT, SNF, protein, density, water, weight</li>
-                <li>Delivery records: quantity in liters, delivery time, date</li>
-                <li>Device token for push notifications (FCM token)</li>
-            </ul>
-            <h3>Data Access</h3>
-            <ul>
-                <li>Admins can only access data associated with their account.</li>
-                <li>Customers can only view data linked to their Admin.</li>
-                <li>No user can access data of another Admin or their customers.</li>
-            </ul>
-            <div class="highlight">
-                We do not sell, trade, or share your personal information with third parties except as required by law
-                or to provide core app functionality (e.g., push notifications via Firebase).
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>5. Push Notifications</h2>
-            <p>MilkTrack uses Firebase Cloud Messaging (FCM) to send push notifications, including:</p>
-            <ul>
-                <li>Delivery confirmation notifications to customers when a delivery is marked.</li>
-                <li>Daily reminder notifications to Admins to enter milk data (morning and evening).</li>
-            </ul>
-            <p>You may manage notification preferences through your device settings. Disabling notifications may affect
-                the functionality of the app.</p>
-        </div>
-
-        <div class="card">
-            <h2>6. Acceptable Use</h2>
-            <p>By using MilkTrack, you agree not to:</p>
-            <ul>
-                <li>Provide false or misleading information during registration or data entry.</li>
-                <li>Attempt to access another user's account or data without authorization.</li>
-                <li>Use the application for any unlawful purpose.</li>
-                <li>Interfere with the proper functioning of the application.</li>
-                <li>Attempt to reverse engineer or modify the application.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>7. Data Accuracy</h2>
-            <p>Admins are solely responsible for the accuracy and completeness of:</p>
-            <ul>
-                <li>Customer information entered into the system.</li>
-                <li>Milk quality data recorded daily.</li>
-                <li>Delivery records marked for each customer.</li>
-            </ul>
-            <p>MilkTrack is not liable for any disputes arising from inaccurate data entered by Admins.</p>
-        </div>
-
-        <div class="card">
-            <h2>8. Termination</h2>
-            <p>We reserve the right to suspend or terminate your access to MilkTrack at any time if:</p>
-            <ul>
-                <li>You violate these Terms and Conditions.</li>
-                <li>Your account is found to be involved in fraudulent or harmful activity.</li>
-                <li>You provide false information during registration.</li>
-            </ul>
-            <p>Admins may remove customer accounts at any time. Removed customers will lose access to their delivery and
-                milk data.</p>
-        </div>
-
-        <div class="card">
-            <h2>9. Third-Party Services</h2>
-            <p>MilkTrack uses the following third-party services:</p>
-            <ul>
-                <li><strong>Supabase</strong> — Database and authentication services.</li>
-                <li><strong>Firebase (Google)</strong> — Push notification delivery via FCM.</li>
-            </ul>
-            <p>Use of these services is subject to their respective terms and privacy policies. We are not responsible
-                for the practices of these third-party providers.</p>
-        </div>
-
-        <div class="card">
-            <h2>10. Bluetooth Device Usage</h2>
-            <p>MilkTrack supports Bluetooth connectivity with compatible milk analyzer devices. By using this feature,
-                you agree to the following:</p>
-            <h3>Device Pairing</h3>
-            <ul>
-                <li>The milk analyzer device must be paired with your phone before use.</li>
-                <li>MilkTrack connects only to devices named <strong>"Yogesh_Milk_Analyzer"</strong>.</li>
-                <li>You are responsible for ensuring your device is correctly paired.</li>
-            </ul>
-            <h3>Data Accuracy</h3>
-            <ul>
-                <li>Milk quality readings (FAT, SNF, Protein, Density, Water) are received directly from the hardware
-                    analyzer.</li>
-                <li>MilkTrack displays and saves data as received — we are not responsible for inaccurate readings
-                    caused by hardware malfunction or improper device calibration.</li>
-                <li>Always verify readings before saving to the system.</li>
-            </ul>
-            <h3>Bluetooth Permissions</h3>
-            <ul>
-                <li>The app requires Bluetooth and location permissions on Android to discover and connect to devices.
-                </li>
-                <li>These permissions are used solely for connecting to the milk analyzer and are not used for tracking
-                    your location.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>11. Limitation of Liability</h2>
-            <p>MilkTrack is provided on an "as is" basis without warranties of any kind. We do not guarantee that:</p>
-            <ul>
-                <li>The application will be error-free or uninterrupted.</li>
-                <li>All data will be preserved in the event of a technical failure.</li>
-                <li>Notifications will always be delivered on time.</li>
-            </ul>
-            <p>To the maximum extent permitted by law, MilkTrack shall not be liable for any indirect, incidental, or
-                consequential damages arising from your use of the application.</p>
-        </div>
-
-
-
-        <div class="card">
-            <h2>12. Changes to Terms</h2>
-            <p>We reserve the right to update these Terms and Conditions at any time. Changes will be communicated
-                through:</p>
-            <ul>
-                <li>An in-app notification.</li>
-                <li>An update to the "Last updated" date at the top of this page.</li>
-            </ul>
-            <p>Continued use of MilkTrack after changes constitutes your acceptance of the updated terms.</p>
-        </div>
-
-        <div class="card">
-            <h2>13. Governing Law</h2>
-            <p>These Terms and Conditions are governed by the laws of <strong>India</strong>. Any disputes arising from
-                the use of MilkTrack shall be subject to the jurisdiction of courts in <strong>Haryana, India</strong>.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>14. Contact Us</h2>
-            <p>If you have any questions or concerns about these Terms and Conditions, please contact us:</p>
-            <ul>
-                <li>📧 Email: <a href="mailto:support@milktrack.app">support@milktrack.app</a></li>
-                <li>📱 App: MilkTrack — available on Google Play Store and Apple App Store</li>
+                <li><strong>Email:</strong> support@milktrack.app</li>
+                <li><strong>Official Address:</strong> Haryana, India</li>
             </ul>
         </div>
 
     </div>
 
     <footer>
-        <p>© 2026 MilkTrack. All rights reserved.</p>
-        <p style="margin-top:6px"><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Contact</a></p>
+        <p>&copy; 2026 MilkTrack. All rights reserved.</p>
+        <p style="margin-top:10px;">Professional Milk Management Solutions</p>
     </footer>
 
 </body>
 
 </html>
+```
